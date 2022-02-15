@@ -1,0 +1,79 @@
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Naslov</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div style="background-color: darkseagreen;" class="col-2">Prva kolona</div>
+            <div style="background-color: darkturquoise;" class="col-2 offset-1 order-5">Druga kolona</div>
+            <div style="background-color: goldenrod;" class="col-2 order-first">Treca kolona</div>
+        </div>
+        <div class="row">
+            <div style="background-color: indianred;" class="col-5">Prva kolona</div>
+            <div style="background-color: lawngreen;" class="col-5">Druga kolona</div>
+            <div style="background-color: lightseagreen;" class="col-5">Treca kolona</div>
+            <div style="background-color: magenta;" class="col-2">Cetvrta kolona</div>
+        </div>
+        <div class="row">
+            <div style="background-color: mediumturquoise;" class="col-sm-12 col-md-6">Prva kolona</div>
+            <div style="background-color: navajowhite;" class="col-sm-12 col-md-6">Druga kolona</div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center  text-info bg-danger">Moj naslov</h1>
+                <kbd>W</kbd> - radi to i to<br>
+                <kbd>S</kbd> - radi to i to<br>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table class="table table-striped table-dark table-hover table-bordered text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1 offset-1 "><button class="btn btn-primary btn-lg">1</button></div>
+            <div class="col-1 offset-1"><button class="btn btn-danger btn-sm">2</button></div>
+            <div class="col-1 offset-1"><button class="btn btn-outline-warning">3</button></div>
+            <div class="col-1 offset-1"><button>4</button></div>
+            <div class="col-1 offset-1"><button>5</button></div>
+            <div class="col-1 offset-1"><button>6</button></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <ngb-alert  type="primary" [dismissible]="true"><strong>Whoa!</strong> This is a custom alert.</ngb-alert>
+            </div>
+        </div>
+    </div>
+</body>
