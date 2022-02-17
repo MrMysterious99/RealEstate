@@ -1,11 +1,75 @@
 <body>
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-      <h1 class="mat-display-4">Real Estate</h1>
-      <p class="lead">Your Gateway to a Richer New Life</p>
+      <img src="../../assets/iu.png" width="100px" height="100px" align="right" padding="20px">
+      <h1 class="mat-display-3" style="font-family:'San Francisco', Helvetica, Arial, san-serif">Real Estate</h1>
+      <!-- <p class="lead">Your Gateway to a Richer New Life</p> -->
     </div>
   </div>
+<!-- <div class="col-lg-9 col-md-7 center"></div> -->
+<!-- <div class="col-lg-3 col-md-5 right"> -->
+ 
 
+  <mat-grid-list cols="6">
+    <mat-grid-tile colspan="4" rowspan="3">
+      <!-- CAROUSEL GOES HERE -->
+      <!-- <img src="../../assets/house_2.jpg" width="100%"> -->
+      <ngb-carousel *ngIf="images" style="height: 100%;">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[0]" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Da li zelite da kupte ovaj most????</h3>
+            <p>Mnogo je dobar izdrzljiv i kida</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[1]"  alt="Random second slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>da li zelite da kupite ovaj camac??</h3>
+            <p>Women sold separetly.</p>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[2]" alt="Random third slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>Planine doline</h3>
+            <p>mozete da otputujete ovde sa svojomo porodicom jos danas za samo $299.</p>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2" rowspan="2">
+      <form class="login-form">
+        <mat-form-field class="example-full-width" appearance="fill" color="accent">
+          <mat-label>Username</mat-label>
+          <input matInput>
+        </mat-form-field><br/>
+
+        <mat-form-field class="example-full-width" appearance="fill" color="accent">
+          <mat-label >Password</mat-label>
+          <input matInput type="password">
+        </mat-form-field><br/>
+        <button mat-raised-button color="primary">Log in</button>
+      </form>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2">
+      <form class="register-button">
+        <h4 style="text-align: center;">Or take a moment to register if You dont have an account.</h4><br/>
+        <button  mat-raised-button color="accent" matTooltip="Press here for register form">Register</button>
+      </form>
+       </mat-grid-tile>
+  </mat-grid-list>
+  
+<!-- </div> -->
+
+  
+<!-- 
   <section>
     <div class="example-label">Basic</div>
     <div class="example-button-row">
@@ -132,6 +196,5 @@
       </div>
     </div>
   </section>
-  
-</body>
-  
+-->
+<!-- </body> -->

@@ -1,6 +1,10 @@
 .jumbotron{
-    background-color: green;
+  background: #323233;
+  color:whitesmoke;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:'San Francisco', Helvetica, Arial, san-serif; 
 }
+
 section {
     display: table;
   }
@@ -34,5 +38,18 @@ section {
   }
   
   body{
-      background-color: lightseagreen;
+    background: #34283c;
+    color:whitesmoke;
+    font-family:'San Francisco', Helvetica, Arial, san-serif; 
   }
+
+  button{
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
+}
+mat-grid-list{
+  margin: 0;
+  padding: 0;
+  
+}
